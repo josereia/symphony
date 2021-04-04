@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br" mode="ios">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SongHit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/icons/favicon-96x96-dunplab-manifest-34030.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+    <meta name="color-scheme" content="light dark" />
+</head>
+
+<body class="dark">
+    <ion-app>
+        <ion-tabs>
+
+            <ion-tab tab="home">
+                <ion-header translucent>
+                    <ion-toolbar>
+                        <ion-title>Music</ion-title>
+                    </ion-toolbar>
+                </ion-header>
+
+                <ion-content fullscreen class="ion-padding">
+                    <h1>Music</h1>
+                </ion-content>
+            </ion-tab>
+
+            <ion-tab tab="search" component="tab-search">
+                
+            </ion-tab>
+
+            <ion-tab tab="library">
+                <ion-header translucent>
+                    <ion-toolbar>
+                        <ion-title>Games</ion-title>
+                    </ion-toolbar>
+                </ion-header>
+
+                <ion-content fullscreen class="ion-padding">
+                    <h1>Games</h1>
+                </ion-content>
+            </ion-tab>
+
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="home">
+                    <ion-label>Início</ion-label>
+                    <ion-icon name="musical-note"></ion-icon>
+                </ion-tab-button>
+                <ion-tab-button tab="search">
+                    <ion-label>Buscar</ion-label>
+                    <ion-icon name="search"></ion-icon>
+                </ion-tab-button>
+                <ion-tab-button tab="library">
+                    <ion-label>Biblioteca</ion-label>
+                    <ion-icon name="library"></ion-icon>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-tabs>
+    </ion-app>
+
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
